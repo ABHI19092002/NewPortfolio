@@ -10,43 +10,40 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-between items-center py-3 gap-6 w-full text-white">
+      <nav className="flex fixed justify-between items-center py-3 gap-6 w-full text-white z-50 bg-gray/40 backdrop-blur-xl border-b border-white/10 shadow-md">
         <div className="left-0">
-          <Text className="font-[Inter] italic font-bold text-3xl px-10 md:px-10">
+          <Text className="font-[Inter] italic font-bold text-3xl px-5 md:px-10">
             ABHISHEK
           </Text>
         </div>
 
         {/* Desktop Nav */}
-        <NavigationMenu.Root>
+        <NavigationMenu.Root className="bg-gray/40 backdrop-blur-xl">
           <NavigationMenu.List className="hidden md:flex gap-6">
             <NavigationMenu.Item className="mx-6 ff text-2xl font-light">
-              <NavigationMenu.Link href="#">Work</NavigationMenu.Link>
+              <NavigationMenu.Link href="#projects">
+                Projects
+              </NavigationMenu.Link>
             </NavigationMenu.Item>
             <NavigationMenu.Item className="text-2xl font-light ff">
-              <NavigationMenu.Link href="#">Contact</NavigationMenu.Link>
+              <NavigationMenu.Link href="#about">About</NavigationMenu.Link>
             </NavigationMenu.Item>
             <NavigationMenu.Item className="mx-6 ff font-light text-2xl">
-              <NavigationMenu.Link href="#">About</NavigationMenu.Link>
+              <NavigationMenu.Link href="#skillset">Skills</NavigationMenu.Link>
+            </NavigationMenu.Item>
+            <NavigationMenu.Item className="mr-5 ml-1 ff font-light text-2xl">
+              <NavigationMenu.Link href="#contact">Contact</NavigationMenu.Link>
             </NavigationMenu.Item>
           </NavigationMenu.List>
         </NavigationMenu.Root>
 
         {/* Hamburger */}
         <div className="md:hidden">
-          {navOpen ? (
-            <IoMdCloseCircleOutline
-              className="mx-3 cursor-pointer"
-              size={32}
-              onClick={() => setNavOpen(false)}
-            />
-          ) : (
-            <GiHamburgerMenu
-              className="mx-3 cursor-pointer"
-              size={32}
-              onClick={() => setNavOpen(true)}
-            />
-          )}
+          <GiHamburgerMenu
+            className="mx-3 cursor-pointer"
+            size={32}
+            onClick={() => setNavOpen(true)}
+          />
         </div>
       </nav>
 
@@ -54,21 +51,55 @@ export default function Navbar() {
       <AnimatePresence>
         {navOpen && (
           <motion.div
-            initial={{ y: -50, opacity: 0 }} // start lower + hidden
-            animate={{ y: 0, opacity: 1 }} // slide up + fade in
-            exit={{ y: -50, opacity: 0 }} // slide down + fade out
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -50, opacity: 0 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black/60 backdrop-blur-md"
           >
+            {/* Close Icon (inside overlay, top-right corner) */}
+            <IoMdCloseCircleOutline
+              className="absolute top-5 right-2 text-white cursor-pointer"
+              size={36}
+              onClick={() => setNavOpen(false)}
+            />
+
             <NavigationMenu.Root>
-              <NavigationMenu.List className="flex ff flex-col justify-center items-center gap-5 backdrop-blur-md bg-white/30 border border-white/20">
+              <NavigationMenu.List
+                className="flex flex-col justify-center items-center gap-8 p-10 bg-white/10 border border-white/30
+               rounded-lg"
+              >
                 <NavigationMenu.Item className="py-3 font-light text-white text-2xl">
-                  <NavigationMenu.Link href="#">Work</NavigationMenu.Link>
+                  <NavigationMenu.Link
+                    onClick={() => setNavOpen(false)}
+                    href="#projects"
+                  >
+                    Projects
+                  </NavigationMenu.Link>
                 </NavigationMenu.Item>
-                <NavigationMenu.Item className="text-2xl ff text-white font-light">
-                  <NavigationMenu.Link href="#">Contact</NavigationMenu.Link>
+                <NavigationMenu.Item className="text-2xl text-white font-light">
+                  <NavigationMenu.Link
+                    onClick={() => setNavOpen(false)}
+                    href="#about"
+                  >
+                    About
+                  </NavigationMenu.Link>
                 </NavigationMenu.Item>
-                <NavigationMenu.Item className="py-3  ff text-2xl text-white font-light">
-                  <NavigationMenu.Link href="#">About</NavigationMenu.Link>
+                <NavigationMenu.Item className="py-3 text-2xl text-white font-light">
+                  <NavigationMenu.Link
+                    onClick={() => setNavOpen(false)}
+                    href="#skillset"
+                  >
+                    Skills
+                  </NavigationMenu.Link>
+                </NavigationMenu.Item>
+                <NavigationMenu.Item className="py-3 text-2xl text-white font-light">
+                  <NavigationMenu.Link
+                    onClick={() => setNavOpen(false)}
+                    href="#contact"
+                  >
+                    Contact
+                  </NavigationMenu.Link>
                 </NavigationMenu.Item>
               </NavigationMenu.List>
             </NavigationMenu.Root>
