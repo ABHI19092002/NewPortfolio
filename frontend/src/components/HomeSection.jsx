@@ -57,7 +57,7 @@ export default function HomeSection({ onExploreClick }) {
         </div>
         <a
           onClick={onExploreClick}
-          className="absolute bottom-10 left-1/3 animate-bounce inline-flex text-lime-300 items-center gap-1 text-xl p-2 md:hidden"
+          className="absolute bottom-20 left-1/3 animate-bounce inline-flex text-lime-300 items-center gap-1 text-xl p-2 md:hidden"
         >
           Explore
           <CiCircleChevDown size={30} />
