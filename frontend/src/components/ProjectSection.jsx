@@ -9,11 +9,15 @@ export default function ProjectSection() {
       </h1>
       <h1
         size="3"
-        className="text-gray-400 mt-10 text-justify text-lg font-[Inter] md:mx-20"
+        className="text-gray-400 my-15 text-justify text-lg font-[Inter] md:mx-20 md:text-xl"
       >
         Here are some of the selected projects that showcase my passion for
         Fullstack Development.
       </h1>
+      <ProjectCard />
+      <div className="mx-auto border-b border-lime-300 md:w-3/4"></div>
+      <ProjectCard />
+      <div className="mx-auto border-b border-lime-300 md:w-3/4"></div>
       <ProjectCard />
     </div>
   );

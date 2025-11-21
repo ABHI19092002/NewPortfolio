@@ -82,6 +82,7 @@ button {
 	resize:vertical;
 	padding: 10px;
     background-color: #1a1a1a;
+
 }
 
 .Button {
@@ -90,7 +91,7 @@ button {
 	justify-content: center;
 	border-radius: 4px;
 	padding: 0 15px;
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 1;
 	font-weight: 500;
 	height: 35px;

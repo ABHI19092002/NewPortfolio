@@ -31,27 +31,27 @@ export const Contact = () => {
       <div className="mt-10 flex flex-wrap gap-3 justify-between">
         <Button radius="full" variant="ghost">
           <a href="https://www.linkedin.com/in/abhishek-gaikwad-8a177321b/">
-            <FaLinkedinIn color="#bbf451" size={30} />
+            <FaLinkedinIn color="#bbf451" className="text-3xl md:text-5xl" />
           </a>
         </Button>
         <Button radius="full" variant="ghost">
           <a href="https://github.com/ABHI19092002">
-            <FaGithub color="#bbf451" size={30} />
+            <FaGithub color="#bbf451" className="text-3xl md:text-5xl" />
           </a>
         </Button>
         <Button radius="full" variant="ghost">
           <a href="https://www.instagram.com/abhi_gaikwad222/">
-            <FaInstagram color="#bbf451" size={30} />
+            <FaInstagram color="#bbf451" className="text-3xl md:text-5xl" />
           </a>
         </Button>
         <Button radius="full" variant="ghost">
           <a href="https://wa.link/9mz5gr">
-            <FaWhatsapp color="#bbf451" size={30} />
+            <FaWhatsapp color="#bbf451" className="text-3xl md:text-5xl" />
           </a>
         </Button>
         <Button radius="full" variant="ghost">
           <a href="https://t.me/abhigaikwad018">
-            <FaTelegramPlane color="#bbf451" size={30} />
+            <FaTelegramPlane color="#bbf451" className="text-3xl md:text-5xl" />
           </a>
         </Button>
       </div>
@@ -135,7 +135,7 @@ export const Contact = () => {
             </Form.Message>
           </div>
           <Form.Control asChild>
-            <textarea className="bg-gray-800 Textarea" required />
+            <textarea rows={7} className="bg-gray-800 Textarea" required />
           </Form.Control>
         </Form.Field>
         <Form.Submit asChild>

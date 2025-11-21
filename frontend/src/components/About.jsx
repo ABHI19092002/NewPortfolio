@@ -27,7 +27,7 @@ export const About = () => {
       </h5>
 
       <a
-        href="https://www.linkedin.com/in/yourusername"
+        href="../public/AbhishekGaikwadResume.pdf"
         className="flex my-10 sm:mt-0 w-auto h-10 px-5 text-lg text-black font-[Manrope] font-bold bg-lime-300 items-center justify-center
         rounded-4xl md:mt-12"
       >

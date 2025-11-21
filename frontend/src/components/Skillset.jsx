@@ -18,6 +18,9 @@ import { SiRadixui } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa6";
 import { FaAws } from "react-icons/fa6";
 import { SkillBadge } from "./SkillBadge";
+import { PiMonitorPlay } from "react-icons/pi";
+import { HiOutlineServerStack } from "react-icons/hi2";
+import { TbAutomation } from "react-icons/tb";
 
 
 export const Skillset = () => {
@@ -31,8 +34,8 @@ export const Skillset = () => {
         caffeinated.
       </h5>
 
-      <h1 className="font-[Roboto Condensed] text-2xl mt-10 md:text-3xl md:mb-6">
-        Frontend
+      <h1 className="flex gap-3 font-[Roboto Condensed] text-2xl mt-10 md:text-3xl md:mb-6">
+        Frontend <PiMonitorPlay className="text-lime-300" />
       </h1>
       <div className="flex flex-wrap gap-3 mt-4">
         <SkillBadge iconName={FaReact} heading="React" />
@@ -45,8 +48,8 @@ export const Skillset = () => {
         <SkillBadge iconName={FaBootstrap} heading="Bootstrap" />
       </div>
 
-      <h1 className="font-[Roboto Condensed] text-2xl mt-10 md:text-3xl md:mb-6">
-        Backend
+      <h1 className="flex gap-3 font-[Roboto Condensed] text-2xl mt-10 md:text-3xl md:mb-6">
+        Backend <HiOutlineServerStack className="text-lime-300" />
       </h1>
       <div className="flex flex-wrap gap-3 mt-4">
         <SkillBadge iconName={FaNode} heading="NodeJS" />
@@ -57,8 +60,8 @@ export const Skillset = () => {
         <SkillBadge iconName={FaPython} heading="Python" />
       </div>
 
-      <h1 className="font-[Roboto Condensed] text-2xl mt-10 md:text-3xl md:mb-6">
-        DevOps
+      <h1 className="flex gap-3 font-[Roboto Condensed] text-2xl mt-10 md:text-3xl md:mb-6">
+        DevOps <TbAutomation className="text-lime-300" />
       </h1>
       <div className="flex flex-wrap gap-3 mt-4 md:mb-10">
         <SkillBadge iconName={FaDocker} heading="Docker" />

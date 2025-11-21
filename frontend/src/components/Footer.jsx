@@ -7,11 +7,11 @@ export const Footer = () => {
 
   return (
     <div className="text-center mt-4 py-6">
-      <p className="block text-md text-gray-400 text-center font-[Inter] md:text-2xl">
+      <p className="block text-md text-gray-400 text-center font-[Inter] md:text-xl">
         <RiCopyrightLine className="inline-block mr-1 text-[20px] md:text-[24px]" />
         Copyright {currentYear} Abhishek Gaikwad
       </p>
-      <p className="block text-md text-gray-400 text-center font-[Inter] my-2 py-10 md:text-2xl">
+      <p className="block text-md text-gray-400 text-center font-[Inter] my-2 py-10 md:text-xl">
         Made with <span className="animate-pulse">💗</span>
       </p>
     </div>
