@@ -25,7 +25,7 @@ import { TbAutomation } from "react-icons/tb";
 
 export const Skillset = () => {
   return (
-    <div id="skillset" className="mx-3 p-2 my-5 md:mx-20">
+    <div id="skillset" className="mx-3 p-2 my-15 md:mx-20">
       <h1 className="font-[Oswald] underline decoration-lime-300 underline-offset-9 text-3xl pb-4 mt-4 mb-4 md:text-5xl">
         MY SKILLSET
       </h1>

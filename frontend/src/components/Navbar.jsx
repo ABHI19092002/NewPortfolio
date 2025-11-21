@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex fixed justify-between items-center py-3 gap-6 w-full text-white z-50 bg-gray/40 backdrop-blur-xl border-b border-white/10 shadow-md">
+      <nav className="flex absolute top-0 justify-between items-center py-3 gap-6 w-full text-white z-50 bg-gray/40 backdrop-blur-xl border-b border-white/10 shadow-md">
         <div className="left-0">
           <Text className="font-[Inter] italic font-bold text-3xl px-5 md:px-10">
             ABHISHEK
@@ -20,18 +20,18 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <NavigationMenu.Root className="bg-gray/40 backdrop-blur-xl">
           <NavigationMenu.List className="hidden md:flex gap-6">
-            <NavigationMenu.Item className="mx-6 ff text-2xl font-light">
+            <NavigationMenu.Item className="mx-6 font-[Manrope] ff text-2xl font-light">
               <NavigationMenu.Link href="#projects">
                 Projects
               </NavigationMenu.Link>
             </NavigationMenu.Item>
-            <NavigationMenu.Item className="text-2xl font-light ff">
+            <NavigationMenu.Item className="text-2xl font-[Manrope] font-light ff">
               <NavigationMenu.Link href="#about">About</NavigationMenu.Link>
             </NavigationMenu.Item>
-            <NavigationMenu.Item className="mx-6 ff font-light text-2xl">
+            <NavigationMenu.Item className="mx-6 font-[Manrope] ff font-light text-2xl">
               <NavigationMenu.Link href="#skillset">Skills</NavigationMenu.Link>
             </NavigationMenu.Item>
-            <NavigationMenu.Item className="mr-5 ml-1 ff font-light text-2xl">
+            <NavigationMenu.Item className="mr-5 font-[Manrope] ml-1 ff font-light text-2xl">
               <NavigationMenu.Link href="#contact">Contact</NavigationMenu.Link>
             </NavigationMenu.Item>
           </NavigationMenu.List>
@@ -69,7 +69,7 @@ export default function Navbar() {
                 className="flex flex-col justify-center items-center gap-8 p-10 bg-white/10 border border-white/30
                rounded-lg"
               >
-                <NavigationMenu.Item className="py-3 font-light text-white text-2xl">
+                <NavigationMenu.Item className="py-3 font-[Manrope] font-light text-white text-2xl">
                   <NavigationMenu.Link
                     onClick={() => setNavOpen(false)}
                     href="#projects"
@@ -77,7 +77,7 @@ export default function Navbar() {
                     Projects
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
-                <NavigationMenu.Item className="text-2xl text-white font-light">
+                <NavigationMenu.Item className="text-2xl font-[Manrope] text-white font-light">
                   <NavigationMenu.Link
                     onClick={() => setNavOpen(false)}
                     href="#about"
@@ -85,7 +85,7 @@ export default function Navbar() {
                     About
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
-                <NavigationMenu.Item className="py-3 text-2xl text-white font-light">
+                <NavigationMenu.Item className="py-3 font-[Manrope] text-2xl text-white font-light">
                   <NavigationMenu.Link
                     onClick={() => setNavOpen(false)}
                     href="#skillset"
@@ -93,7 +93,7 @@ export default function Navbar() {
                     Skills
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
-                <NavigationMenu.Item className="py-3 text-2xl text-white font-light">
+                <NavigationMenu.Item className="pb-5 font-[Manrope] text-2xl text-white font-light">
                   <NavigationMenu.Link
                     onClick={() => setNavOpen(false)}
                     href="#contact"

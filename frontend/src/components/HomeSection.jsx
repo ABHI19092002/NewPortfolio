@@ -50,7 +50,7 @@ export default function HomeSection({ onExploreClick }) {
         </div>
         <div>
           <img
-            className="hidden rounded-2xl sm:h-1/3 md:h-125 md:flex lg:h-150 xl:h-3/4 xl:w-auto md:w-7xl"
+            className="hidden rounded-2xl sm:h-1/3 md:h-125 md:flex lg:h-150 xl:h-185 xl:w-auto md:w-7xl"
             alt="pic"
             src="/my-pic.jpeg"
           />

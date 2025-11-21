@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectSection() {
   return (
-    <div id="projects" className="min-h-screen mx-3 p-2 my-5">
+    <div id="projects" className="min-h-screen mx-3 p-2 my-15">
       <h1 className="font-[Oswald] mt-8 underline decoration-lime-300 underline-offset-9 text-3xl mb-4 md:mx-20 md:text-5xl">
         FEATURED PROJECTS
       </h1>

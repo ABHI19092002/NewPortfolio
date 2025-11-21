@@ -4,7 +4,7 @@ import { MdOutlineCloudDownload } from "react-icons/md";
 
 export const About = () => {
   return (
-    <div id="about" className="mx-3 p-2 my-5 md:mx-20">
+    <div id="about" className="mx-3 p-2 my-5 md:mx-20 my-15">
       <h1 className="font-[Oswald] text-3xl underline decoration-lime-300 underline-offset-9 pb-4 mt-4 mb-4 md:text-5xl">
         ABOUT ME
       </h1>
