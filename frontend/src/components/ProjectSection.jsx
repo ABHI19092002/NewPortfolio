@@ -7,10 +7,15 @@ Technews is a comprehensive news platform built with modern tech that aggregates
 a personalized experience by allowing them to customize their news feed based on their interests. 
 `;
 
-
-const netflixDesc = `
+  const netflixDesc = `
 This Netflix Clone is a web application that replicates the core features of the popular streaming service, Netflix. 
 It allows users to browse through a vast library of movies and TV shows, complete with detailed descriptions, ratings, and trailers.
+`;
+
+  const farmDesc = `
+Farm Financer is a digital platform that simplifies and automates the loan application process for farmers,
+ enabling them to apply for loans, track application status, and share feedback easily. It also provides administrators
+  with tools to manage, approve or reject applications, and monitor feedback effectively.
 `;
 
   return (
@@ -29,21 +34,39 @@ It allows users to browse through a vast library of movies and TV shows, complet
         Fullstack Development.
       </h1>
       <ProjectCard
+        projectImgUrl="/Netflix.png"
+        projName="Netflix Clone"
+        projDesc={netflixDesc}
+        year={2024}
+        tool="MERN"
+        sourceCodeUrl="https://github.com/ABHI19092002/NetflixClone.git"
+      />
+      <div className="mx-auto border-b border-lime-300 md:w-3/4"></div>
+      <ProjectCard
+        projectImgUrl="/socio.png"
+        projName="Socio Animal"
+        projDesc={farmDesc}
+        year={2023}
+        tool="MERN"
+        sourceCodeUrl="https://github.com/ABHI19092002/Socio-Animal.git"
+      />
+      <div className="mx-auto border-b border-lime-300 md:w-3/4"></div>
+      <ProjectCard
+        projectImgUrl="/farm.png"
+        projName="Farm Finance Management System"
+        projDesc={farmDesc}
+        year={2025}
+        tool=".NET, Angular, SQL"
+        sourceCodeUrl="https://github.com/ABHI19092002/FarmFinancer.git"
+      />
+      <div className="mx-auto border-b border-lime-300 md:w-3/4"></div>
+      <ProjectCard
         projectImgUrl="/technews.png"
         projName="Technews"
         projDesc={techNewsDesc}
         year={2022}
         tool="Python, Flask, SQLite"
         sourceCodeUrl="https://github.com/ABHI19092002/TechNews.git"
-      />
-      <div className="mx-auto border-b border-lime-300 md:w-3/4"></div>
-      <ProjectCard
-        projectImgUrl="/Netflix.png"
-        projName="Netflix Clone"
-        projDesc={netflixDesc}
-        year={2024}
-        tool="MERN, PostmanAPI, JWT"
-        sourceCodeUrl="https://github.com/ABHI19092002/NetflixClone.git"
       />
     </div>
   );

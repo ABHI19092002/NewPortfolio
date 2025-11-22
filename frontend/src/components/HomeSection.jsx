@@ -21,7 +21,7 @@ export default function HomeSection({ onExploreClick }) {
               ABHISHEK GAIKWAD.
             </h1>
             <p className="text-gray-400 text-[16px] md:text-2xl text-left text-sm font-[Inter]">
-              a full-stack developer from India focused on crafting accessible,
+              A passionate full-stack developer from India focused on crafting accessible,
               responsive, and intuitive web experiences.
             </p>
           </div>
