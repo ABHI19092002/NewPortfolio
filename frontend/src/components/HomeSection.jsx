@@ -9,7 +9,7 @@ export default function HomeSection({ onExploreClick }) {
     <Grid>
       <Flex
         justify="center"
-        className="relative flex-col mx-2 min-h-screen xl:gap-10 justify-start items-center gap-5 lg:mx-40 md:mx-10 md:h-screen md:flex-row"
+        className="relative flex-col mx-2 min-h-screen xl:gap-10 justify-start items-center gap-5 lg:mx-40 md:mx-10 md:h-screen md:flex-row 2xl:mr-60"
       >
         <div className="p-5 xl:flex-2">
           <div>

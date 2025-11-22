@@ -24,10 +24,10 @@ import { TbAutomation } from "react-icons/tb";
 
 export const Skillset = () => {
   return (
-    <div id="skillset" className="mx-3 p-2 my-15 md:mx-20 xl:mx-60">
+    <div id="skillset" className="mx-3 p-2 my-15 md:mx-20 xl:ml-60 2xl:mr-60">
       <div className="flex flex-col xl:flex-row xl:gap-50">
         <div className="xl:flex-1">
-          <h1 className="font-[Oswald] underline decoration-lime-300 underline-offset-9 text-3xl pb-4 mt-4 mb-4 md:text-5xl">
+          <h1 className="font-[Oswald] underline decoration-lime-300 underline-offset-9 text-3xl pb-4 mt-4 mb-4 md:text-5xl xl:w-auto">
             MY SKILLSET
           </h1>
           <h5 className="text-gray-400 text-sm font-[Inter] text-left mt-6 text-[17px] md:text-xl md:my-8">
@@ -41,10 +41,10 @@ export const Skillset = () => {
           </h1>
           <div className="flex flex-wrap gap-3 mt-4">
             <SkillBadge iconName={FaReact} heading="React" />
-            <SkillBadge iconName={SiMui} heading="MUI" />
-            <SkillBadge iconName={RiTailwindCssFill} heading="Tailwind CSS" />
             <SkillBadge iconName={TbBrandTypescript} heading="Typesript" />
             <SkillBadge iconName={IoLogoJavascript} heading="Javascript" />
+            <SkillBadge iconName={RiTailwindCssFill} heading="Tailwind CSS" />
+            <SkillBadge iconName={SiMui} heading="MUI" />
             <SkillBadge iconName={IoLogoAngular} heading="Angular" />
             <SkillBadge iconName={SiRadixui} heading="RadixUI" />
             <SkillBadge iconName={FaBootstrap} heading="Bootstrap" />
@@ -67,10 +67,10 @@ export const Skillset = () => {
           </h1>
           <div className="flex flex-wrap gap-3 mt-4 md:mb-10">
             <SkillBadge iconName={FaDocker} heading="Docker" />
+            <SkillBadge iconName={FaAws} heading="Aws" />
             <SkillBadge iconName={FaGitAlt} heading="Git" />
             <SkillBadge iconName={FcLinux} heading="Linux" />
             <SkillBadge iconName={SiPostman} heading="PostmanAPI" />
-            <SkillBadge iconName={FaAws} heading="Aws" />
           </div>
         </div>
       </div>

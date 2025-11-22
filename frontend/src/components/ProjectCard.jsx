@@ -4,7 +4,7 @@ export default function ProjectCard({projectImgUrl, projName, projDesc, year, to
   return (
     <div className="my-15 md:flex md:flex-row md:gap-20 xl:gap-50 md:justify-center md:items-center md:mr-6 md:mt-25">
       <img
-        className="rounded-xl flex-1 mb-6 object-cover aspect-[16/9] md:w-[300px] xl:h-max xl:object-fill md:h-[300px] md:object-fill bg-black md:ml-20"
+        className="rounded-xl flex-1 mb-6 object-cover aspect-[16/9] xl:aspect-[4/4] 2xl:aspect-[15/9] md:w-[300px] xl:h-max xl:object-fill md:h-[300px] md:object-fill bg-black md:ml-20"
         src={projectImgUrl}
         alt="Project snap"
         style={{

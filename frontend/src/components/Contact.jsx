@@ -8,7 +8,7 @@ import { Form } from "radix-ui";
 
 export const Contact = () => {
   return (
-    <div id="contact" className="mx-3 p-2 md:mx-20 xl:mx-60 md:my-15">
+    <div id="contact" className="mx-3 p-2 md:mx-20 xl:ml-60 2xl:mr-60 md:my-15">
       <div className="flex flex-col xl:flex-row xl:gap-40">
         <div className="flex-1">
           <h1 className="font-[Oswald] underline decoration-lime-300 underline-offset-9 text-3xl pb-4 mt-4 mb-2 md:text-5xl">
