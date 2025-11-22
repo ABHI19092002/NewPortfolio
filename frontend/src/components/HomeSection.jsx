@@ -9,9 +9,9 @@ export default function HomeSection({ onExploreClick }) {
     <Grid>
       <Flex
         justify="center"
-        className="relative flex-col mx-2 min-h-screen xl:gap-32 justify-start items-center gap-5 lg:mx-40 md:mx-10 md:h-screen md:flex-row"
+        className="relative flex-col mx-2 min-h-screen xl:gap-10 justify-start items-center gap-5 lg:mx-40 md:mx-10 md:h-screen md:flex-row"
       >
-        <div className="p-5">
+        <div className="p-5 xl:flex-2">
           <div>
             <h1 className="mb-5 font-[Manrope] font-bold text-3xl lg:text-[5rem] leading-[1] md:text-[4.5rem]">
               HII, I'M
@@ -21,8 +21,8 @@ export default function HomeSection({ onExploreClick }) {
               ABHISHEK GAIKWAD.
             </h1>
             <p className="text-gray-400 text-[16px] md:text-2xl text-left text-sm font-[Inter]">
-              An India based Fullstack web developer passionate about building
-              accessible, responsive and user friendly websites.
+              a full-stack developer from India focused on crafting accessible,
+              responsive, and intuitive web experiences.
             </p>
           </div>
           <Flex className="gap-4 mt-8">
@@ -48,9 +48,9 @@ export default function HomeSection({ onExploreClick }) {
             </a>
           </Flex>
         </div>
-        <div>
+        <div className="xl:flex-1">
           <img
-            className="hidden rounded-2xl sm:h-1/3 md:h-125 md:flex lg:h-150 xl:h-185 xl:w-auto md:w-7xl"
+            className="hidden rounded-2xl sm:h-1/3 md:h-125 md:flex xl:h-[70vh] xl:w-[60vw] md:w-7xl"
             alt="pic"
             src="/my-pic.jpeg"
           />

@@ -8,142 +8,166 @@ import { Form } from "radix-ui";
 
 export const Contact = () => {
   return (
-    <div id="contact" className="mx-3 p-2 md:mx-20 my-15">
-      <h1 className="font-[Oswald] underline decoration-lime-300 underline-offset-9 text-3xl pb-4 mt-4 mb-2 md:text-5xl">
-        LET'S CONNECT
-      </h1>
-      <h5 className="text-gray-400 mt-10 font-[Inter] text-left text-[16px] md:text-xl">
-        Say hello at{" "}
-        <a
-          className="text-white underline decoration-lime-300 underline-offset-9"
-          href="mailto:gaikwadabhishek283@gmail.com"
-        >
-          gaikwadabhishek283@gmail.com
-        </a>
-        .
-      </h5>
+    <div id="contact" className="mx-3 p-2 md:mx-20 xl:mx-60 md:my-15">
+      <div className="flex flex-col xl:flex-row xl:gap-40">
+        <div className="flex-1">
+          <h1 className="font-[Oswald] underline decoration-lime-300 underline-offset-9 text-3xl pb-4 mt-4 mb-2 md:text-5xl">
+            LET'S CONNECT
+          </h1>
+          <h5 className="text-gray-400 mt-10 font-[Inter] text-left text-[16px] md:text-xl">
+            Say hello at{" "}
+            <a
+              className="text-white underline decoration-lime-300 underline-offset-9"
+              href="mailto:gaikwadabhishek283@gmail.com"
+            >
+              gaikwadabhishek283@gmail.com
+            </a>
+            .
+          </h5>
 
-      <h5 className="text-gray-400 font-[Inter] text-left text-[16px] mt-8 md:text-xl">
-        For more info, you can find me on any of the social platforms below —
-        I’m pretty much everywhere
-      </h5>
+          <h5 className="text-gray-400 font-[Inter] text-left text-[16px] mt-8 md:text-xl">
+            For more info, you can find me on any of the social platforms below
+            — I’m pretty much everywhere
+          </h5>
 
-      <div className="mt-10 flex flex-wrap gap-3 justify-between">
-        <Button radius="full" variant="ghost">
-          <a href="https://www.linkedin.com/in/abhishek-gaikwad-8a177321b/">
-            <FaLinkedinIn color="#bbf451" className="text-3xl md:text-5xl" />
-          </a>
-        </Button>
-        <Button radius="full" variant="ghost">
-          <a href="https://github.com/ABHI19092002">
-            <FaGithub color="#bbf451" className="text-3xl md:text-5xl" />
-          </a>
-        </Button>
-        <Button radius="full" variant="ghost">
-          <a href="https://www.instagram.com/abhi_gaikwad222/">
-            <FaInstagram color="#bbf451" className="text-3xl md:text-5xl" />
-          </a>
-        </Button>
-        <Button radius="full" variant="ghost">
-          <a href="https://wa.link/9mz5gr">
-            <FaWhatsapp color="#bbf451" className="text-3xl md:text-5xl" />
-          </a>
-        </Button>
-        <Button radius="full" variant="ghost">
-          <a href="https://t.me/abhigaikwad018">
-            <FaTelegramPlane color="#bbf451" className="text-3xl md:text-5xl" />
-          </a>
-        </Button>
+          <div className="mt-10 flex flex-wrap gap-3 justify-between">
+            <Button radius="full" variant="ghost">
+              <a href="https://www.linkedin.com/in/abhishek-gaikwad-8a177321b/">
+                <FaLinkedinIn
+                  color="#bbf451"
+                  className="text-3xl md:text-5xl xl:text-4xl"
+                />
+              </a>
+            </Button>
+            <Button radius="full" variant="ghost">
+              <a href="https://github.com/ABHI19092002">
+                <FaGithub
+                  color="#bbf451"
+                  className="text-3xl xl:text-4xl md:text-5xl"
+                />
+              </a>
+            </Button>
+            <Button radius="full" variant="ghost">
+              <a href="https://www.instagram.com/abhi_gaikwad222/">
+                <FaInstagram
+                  color="#bbf451"
+                  className="text-3xl xl:text-4xl md:text-5xl"
+                />
+              </a>
+            </Button>
+            <Button radius="full" variant="ghost">
+              <a href="https://wa.link/9mz5gr">
+                <FaWhatsapp
+                  color="#bbf451"
+                  className="text-3xl xl:text-4xl md:text-5xl"
+                />
+              </a>
+            </Button>
+            <Button radius="full" variant="ghost">
+              <a href="https://t.me/abhigaikwad018">
+                <FaTelegramPlane
+                  color="#bbf451"
+                  className="text-3xl md:text-5xl xl:text-4xl"
+                />
+              </a>
+            </Button>
+          </div>
+        </div>
+        <div className="flex-2">
+          <Form.Root
+            className="mt-15 xl:mt-0"
+            action="https://formspree.io/f/xpznjnkd"
+            method="POST"
+          >
+            <Form.Field className="FormField" name="name">
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Form.Label className="FormLabel">Name</Form.Label>
+                <Form.Message className="FormMessage" match="valueMissing">
+                  Please enter your name
+                </Form.Message>
+                <Form.Message className="FormMessage" match="typeMismatch">
+                  Please provide a valid name
+                </Form.Message>
+              </div>
+              <Form.Control asChild>
+                <input className="Input" type="text" required />
+              </Form.Control>
+            </Form.Field>
+
+            <Form.Field className="FormField" name="email">
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Form.Label className="FormLabel">Email</Form.Label>
+                <Form.Message className="FormMessage" match="valueMissing">
+                  Please enter your email
+                </Form.Message>
+                <Form.Message className="FormMessage" match="typeMismatch">
+                  Please provide a valid email
+                </Form.Message>
+              </div>
+              <Form.Control asChild>
+                <input className="Input" type="email" required />
+              </Form.Control>
+            </Form.Field>
+
+            <Form.Field className="FormField" name="subject">
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Form.Label className="FormLabel">Subject</Form.Label>
+                <Form.Message className="FormMessage" match="valueMissing">
+                  Please enter a subject
+                </Form.Message>
+              </div>
+              <Form.Control asChild>
+                <input className="Textarea" required />
+              </Form.Control>
+            </Form.Field>
+
+            <Form.Field className="FormField" name="message">
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  justifyContent: "space-between",
+                }}
+              >
+                <Form.Label className="FormLabel">Message</Form.Label>
+                <Form.Message className="FormMessage" match="valueMissing">
+                  Please enter your message
+                </Form.Message>
+              </div>
+              <Form.Control asChild>
+                <textarea rows={7} className="bg-gray-800 Textarea" required />
+              </Form.Control>
+            </Form.Field>
+            <Form.Submit asChild>
+              <button
+                type="submit"
+                className="Button"
+                style={{ marginTop: 10 }}
+              >
+                Submit
+              </button>
+            </Form.Submit>
+          </Form.Root>
+        </div>
       </div>
-
-      <Form.Root
-        className="mt-15"
-        action="https://formspree.io/f/xpznjnkd"
-        method="POST"
-      >
-        <Form.Field className="FormField" name="name">
-          <div
-            style={{
-              display: "flex",
-              alignItems: "baseline",
-              justifyContent: "space-between",
-            }}
-          >
-            <Form.Label className="FormLabel">Name</Form.Label>
-            <Form.Message className="FormMessage" match="valueMissing">
-              Please enter your name
-            </Form.Message>
-            <Form.Message className="FormMessage" match="typeMismatch">
-              Please provide a valid name
-            </Form.Message>
-          </div>
-          <Form.Control asChild>
-            <input className="Input" type="text" required />
-          </Form.Control>
-        </Form.Field>
-
-        <Form.Field className="FormField" name="email">
-          <div
-            style={{
-              display: "flex",
-              alignItems: "baseline",
-              justifyContent: "space-between",
-            }}
-          >
-            <Form.Label className="FormLabel">Email</Form.Label>
-            <Form.Message className="FormMessage" match="valueMissing">
-              Please enter your email
-            </Form.Message>
-            <Form.Message className="FormMessage" match="typeMismatch">
-              Please provide a valid email
-            </Form.Message>
-          </div>
-          <Form.Control asChild>
-            <input className="Input" type="email" required />
-          </Form.Control>
-        </Form.Field>
-
-        <Form.Field className="FormField" name="subject">
-          <div
-            style={{
-              display: "flex",
-              alignItems: "baseline",
-              justifyContent: "space-between",
-            }}
-          >
-            <Form.Label className="FormLabel">Subject</Form.Label>
-            <Form.Message className="FormMessage" match="valueMissing">
-              Please enter a subject
-            </Form.Message>
-          </div>
-          <Form.Control asChild>
-            <input className="Textarea" required />
-          </Form.Control>
-        </Form.Field>
-
-        <Form.Field className="FormField" name="message">
-          <div
-            style={{
-              display: "flex",
-              alignItems: "baseline",
-              justifyContent: "space-between",
-            }}
-          >
-            <Form.Label className="FormLabel">Message</Form.Label>
-            <Form.Message className="FormMessage" match="valueMissing">
-              Please enter your message
-            </Form.Message>
-          </div>
-          <Form.Control asChild>
-            <textarea rows={7} className="bg-gray-800 Textarea" required />
-          </Form.Control>
-        </Form.Field>
-        <Form.Submit asChild>
-          <button type="submit" className="Button" style={{ marginTop: 10 }}>
-            Submit
-          </button>
-        </Form.Submit>
-      </Form.Root>
     </div>
   );
 };
