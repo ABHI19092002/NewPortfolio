@@ -13,11 +13,11 @@ export default function HomeSection({ onExploreClick }) {
       >
         <div className="p-5 xl:flex-2">
           <div>
-            <h1 className="mb-5 font-[Manrope] font-bold text-3xl lg:text-[5rem] leading-[1] md:text-[4.5rem]">
+            <h1 className="mb-5 font-[Manrope] font-bold text-3xl lg:text-[5rem] leading-[1] md:text-[4.5rem] xl:text-[4rem]">
               HII, I'M
             </h1>
 
-            <h1 className="mb-5 font-[Manrope] font-bold italic text-3xl lg:text-[5rem] leading-[1] md:text-[4.5rem]">
+            <h1 className="mb-5 font-[Manrope] font-bold italic text-3xl lg:text-[5rem] leading-[1] md:text-[4.5rem] xl:text-[4rem]">
               ABHISHEK GAIKWAD.
             </h1>
             <p className="text-gray-400 text-[16px] md:text-2xl text-left text-sm font-[Inter]">

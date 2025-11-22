@@ -16,7 +16,7 @@ It allows users to browse through a vast library of movies and TV shows, complet
   return (
     <div
       id="projects"
-      className="min-h-screen mx-3 p-2 my-15 xl:ml-40 xl:mr-10 2xl:mr-60"
+      className="min-h-screen mx-3 p-2 my-15 xl:ml-20 xl:mr-10 2xl:mr-60"
     >
       <h1 className="font-[Oswald] mt-8 underline decoration-lime-300 underline-offset-9 text-3xl mb-4 md:mx-20 md:text-5xl">
         FEATURED PROJECTS
