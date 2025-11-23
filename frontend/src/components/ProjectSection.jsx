@@ -18,7 +18,7 @@ Farm Financer is a digital platform that simplifies and automates the loan appli
   with tools to manage, approve or reject applications, and monitor feedback effectively.
 `;
 
-const socioDesc = `
+  const socioDesc = `
 Socio Animal is a social media application inspired by Facebook, offering users the ability to create posts, like, 
 comment, and connect with friends. The platform features real-time notifications, user profiles, and a dynamic news
  feed, providing an engaging and interactive social experience similar to major social networks.
@@ -43,7 +43,6 @@ comment, and connect with friends. The platform features real-time notifications
         projectImgUrl="/Netflix.png"
         projName="Netflix Clone"
         projDesc={netflixDesc}
-        year={2024}
         tool="MERN"
         sourceCodeUrl="https://github.com/ABHI19092002/NetflixClone.git"
       />
@@ -52,7 +51,6 @@ comment, and connect with friends. The platform features real-time notifications
         projectImgUrl="/socio.png"
         projName="Socio Animal"
         projDesc={socioDesc}
-        year={2023}
         tool="MERN"
         sourceCodeUrl="https://github.com/ABHI19092002/Socio-Animal.git"
       />
@@ -61,7 +59,6 @@ comment, and connect with friends. The platform features real-time notifications
         projectImgUrl="/farm.png"
         projName="Farm Finance Management System"
         projDesc={farmDesc}
-        year={2025}
         tool=".NET, Angular, SQL"
         sourceCodeUrl="https://github.com/ABHI19092002/FarmFinancer.git"
       />
@@ -70,7 +67,6 @@ comment, and connect with friends. The platform features real-time notifications
         projectImgUrl="/technews.png"
         projName="Technews"
         projDesc={techNewsDesc}
-        year={2022}
         tool="Python, Flask, SQLite"
         sourceCodeUrl="https://github.com/ABHI19092002/TechNews.git"
       />

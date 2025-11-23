@@ -1,10 +1,10 @@
 import { Flex, Grid } from "@radix-ui/themes";
 import { MdArrowOutward } from "react-icons/md";
-export default function ProjectCard({projectImgUrl, projName, projDesc, year, tool, sourceCodeUrl}) {
+export default function ProjectCard({projectImgUrl, projName, projDesc, tool, sourceCodeUrl}) {
   return (
-    <div className="my-15 md:flex md:flex-row md:gap-20 xl:gap-50 md:justify-center md:items-center md:mr-6 md:mt-25">
+    <div className="my-15 md:flex md:flex-row md:gap-20 xl:gap-30 2xl:gap-50 md:justify-center md:items-center md:mr-6 md:mt-25">
       <img
-        className="rounded-xl flex-1 mb-6 object-cover aspect-[16/9] xl:aspect-[4/4] 2xl:aspect-[15/9] md:w-[300px] xl:h-max xl:object-fill md:h-[300px] md:object-fill bg-black md:ml-20"
+        className="rounded-xl flex-1 mb-6 object-cover aspect-[16/9] xl:aspect-[4/3] 2xl:aspect-[15/9] md:w-[300px] xl:h-max xl:object-fill md:h-[300px] md:object-fill bg-black md:ml-20"
         src={projectImgUrl}
         alt="Project snap"
         style={{
@@ -24,13 +24,9 @@ export default function ProjectCard({projectImgUrl, projName, projDesc, year, to
         </h6>
         <div className="border-b border-[#484848]"></div>
         <Grid>
-          <Flex justify="between" className="py-3">
-            <p className="text-gray-400 text-sm md:text-xl">Year</p>
-            <p className="text-gray-400 text-sm md:text-xl">{year}</p>
-          </Flex>
           <div className="border-b border-[#484848]"></div>
           <Flex justify="between" className="py-3">
-            <p className="text-gray-400 text-sm md:text-xl">Tool</p>
+            <p className="text-gray-400 text-sm md:text-xl">Tech-stack</p>
             <p className="text-gray-400 md:text-xl">{tool}</p>
           </Flex>
           <div className="border-b border-[#484848]"></div>
